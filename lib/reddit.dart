@@ -1,8 +1,6 @@
-/// Support for doing something awesome.
-///
-/// More dartdocs go here.
+/// Another reddit library not outdated yet.
 library;
 
-export 'src/reddit_base.dart';
-
-// TODO: Export any libraries intended for clients of this package.
+export 'src/reddit.dart';
+export 'src/oauth.dart';
+export 'src/constants.dart';
