@@ -1,9 +1,8 @@
 import 'dart:convert';
 
-import 'package:http/http.dart' as http;
-import 'package:oauth2/oauth2.dart';
+import 'package:reddit/reddit.dart';
 
-Future<dynamic> handler(http.Response response) async {
+Future<dynamic> handler(response) async {
   if (response.statusCode >= 200 && response.statusCode < 300) {
     return jsonDecode(response.body);
   } else {

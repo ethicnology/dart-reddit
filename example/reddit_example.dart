@@ -1,4 +1,3 @@
-import 'package:oauth2/oauth2.dart';
 import 'package:reddit/reddit.dart';
 import 'package:dotenv/dotenv.dart';
 
