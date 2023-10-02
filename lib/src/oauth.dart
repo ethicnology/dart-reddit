@@ -35,7 +35,7 @@ class Oauth {
   }
 
   Future<Reddit> authorize({Uri? redirected, String? code}) async {
-    code = redirected?.queryParameters['code'];
+    code ??= redirected?.queryParameters['code'];
     if (code != null) {
       return Reddit.check(await _authorize(code));
     } else {
